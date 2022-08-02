@@ -2,7 +2,6 @@ package group.revealed.steps;
 
 import group.revealed.driver.DriverManager;
 import group.revealed.pages.*;
-import group.revealed.pages.milosPages.MyFirstPage;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +16,8 @@ public class Base {
     @Getter
     private final WebDriver driver = DriverManager.getDriver();
 
-
+    @Getter
+    private final WebDriverWait wdWait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
     //Sportsdirect
     @Getter

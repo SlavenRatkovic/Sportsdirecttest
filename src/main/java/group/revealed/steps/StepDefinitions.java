@@ -18,7 +18,7 @@ import java.util.List;
 public class StepDefinitions {
 
     private final Base base;
-        //Sportsdirect
+    //Sportsdirect
     @Given("I navigate to Sportsdirect Homepage")
     public void iNavigateToSportsdirectHomepage()
     {
@@ -26,7 +26,7 @@ public class StepDefinitions {
     }
 
     @When("I choose Nike Sale")
-    public void iChooseNikeSale() throws InterruptedException {
+    public void iChooseNikeSale() {
         base.getSportsdirectHomepage().chooseNikeSale();
     }
 
