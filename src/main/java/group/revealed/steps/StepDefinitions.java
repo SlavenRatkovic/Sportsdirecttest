@@ -18,31 +18,7 @@ import java.util.List;
 public class StepDefinitions {
 
     private final Base base;
-
-    @Given("User opens Google search page")
-    public void userOpensGoogleSearchPage() {
-        base.getDriver().get("https://www.google.com");
-    }
-
-    @Given("^I navigate to QA Revealed homepage$")
-    public void i_navigate_to_QA_Revealed_homepage() {
-        // Write code here that turns the phrase above into concrete actions
-        base.getDriver().get("https://www.qarevealed.com/");
-    }
-
-    @When("^I click on contact us tab in menu$")
-    public void i_click_on_Nas_tim_link_in_menu() throws InterruptedException {
-        // Write code here that turns the phrase above into concrete actions
-        base.getRevealedHomePage().clickOnContactUs();
-    }
-
-    @Then("relevant information is shown")
-    public void relevantInformationIsShown() {
-        base.getContactUsPage().checkTitle();
-        base.getContactUsPage().openHours();
-    }
-
-    //Sportsdirect
+        //Sportsdirect
     @Given("I navigate to Sportsdirect Homepage")
     public void iNavigateToSportsdirectHomepage()
     {
