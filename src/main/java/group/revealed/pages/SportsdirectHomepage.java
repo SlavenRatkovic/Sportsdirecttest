@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SportsdirectHomepage extends BasePage {
 
-    @FindBy (xpath = "/html/body/div[4]/div[1]/div/div/div/header/div[2]/nav/ul/li[1]/div/ul/li[3]/div/div[2]/div[1]/a/img")
+    @FindBy (className = "nikeLogoMenu")
     WebElement nikeLogo;
 
 
